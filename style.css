@@ -1,0 +1,298 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: Sans-serif;
+  margin: 0;
+  overflow:hidden;
+}
+
+section {    
+  width: 100%;
+  height: 100vh;    
+  background-attachment: fixed;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* all the marquee styling */
+
+
+.marquee {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.marquee>div {
+    width: 200vw;
+    min-width: 8330px;
+    height: 2rem;
+    background: url(https://cdn.glitch.com/147e672b-69e6-4a4d-aefa-9297a2adf205%2Fhot-deal-today.png?1544566971591) 0 center repeat-x magenta;
+    background-size: auto 2rem;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-animation: marquee 60s linear infinite;
+    animation: marquee 60s linear infinite;
+    z-index:3;
+}
+
+.marquee.top {
+    z-index: 3;
+}
+
+.marquee.right {
+    left: 100vw;
+    width: 100vh;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    z-index: 3;
+}
+
+.marquee.left {
+    top: 100%;
+    width: 100vh;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    z-index: 1;
+}
+
+.marquee.bottom {
+    top: auto;
+    bottom: 0;
+    z-index: 2;
+}
+
+
+/* begin audio play button styling */
+
+
+a {
+  color:#fff;
+}
+
+audio, button {
+  z-index:20;
+}
+
+.play {
+  top:80%;
+  left:35%;
+  position:absolute;
+  padding:50px;
+  font-size:24px;
+  background-color:orange;
+  border-radius:5px;
+  color:#fff;
+  font-weight:700;
+  text-transform:uppercase;
+  width:250px;
+}
+
+.pause {
+  top:80%;
+  left:50%;
+  position:absolute;
+  padding:50px;
+  font-size:24px;
+  background-color:blue;
+  border-radius:5px;
+  color:#fff;
+  font-weight:700;
+  text-transform:uppercase;
+  width:250px;
+}
+
+/* begin audio play button styling */
+
+  
+
+.beach {
+  width:100vw;
+  height:100vh;
+  background-image: url(https://cdn.glitch.com/147e672b-69e6-4a4d-aefa-9297a2adf205%2Fbeach-background.jpg?1544019883191);
+  background-repeat: no-repeat;
+  background-size:cover;
+  z-index:-20;
+}
+
+
+.text img{
+    max-width:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:20;
+    -webkit-animation: blink 0.5s infinite; /* Safari 4+ */
+    -moz-animation: blink 0,5s infinite; /* Fx 5+ */
+    -o-animation: blink 0.5s infinite; /* Opera 12+ */
+    animation: blink 0.5s infinite; /* IE 10+, Fx 29+ */
+}
+
+h1 {
+  font-style: italic;
+  color: white;
+  text-align:center;
+  font-size:140px;
+}
+
+.coconut1 img {
+  position:absolute;
+  top:10%;
+  left:80%;
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 1s; 
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+  z-index:10;
+}
+
+
+
+.sandals1 img {
+  max-width:400px;
+  position:absolute;
+  top:60%;
+  left:10%;
+  transform:rotate(10deg);
+  z-index:10;
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s; 
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite; 
+
+}
+
+
+div.buckethat {
+  width:100vw;
+  height:100vh;
+}
+
+.buckethat img {
+  max-width:500px;
+  position:relative;
+  top:70%;
+  left:20%;
+  z-index:-10;
+}
+
+.tiki1 img {
+  max-width:500px;
+  position:absolute;
+  top:0;
+  left:0;
+  transform:rotate(-15deg);
+  z-index:10;
+  -webkit-animation: wiggle 0.5s infinite; /* Safari 4+ */
+  -moz-animation: wiggle 0.5s infinite; /* Fx 5+ */
+  -o-animation: wiggle 0.5s infinite; /* Opera 12+ */
+  animation: wiggle 0.5s infinite; /* IE 10+, Fx 29+ */
+}
+
+.tiki2 img {
+  max-width:500px;
+  position:absolute;
+  top:0;
+  left:65%;
+  transform:rotate(15deg);
+  z-index:10;
+  -webkit-animation: wiggle 0.5s infinite; /* Safari 4+ */
+  -moz-animation: wiggle 0.5s infinite; /* Fx 5+ */
+  -o-animation: wiggle 0.5s infinite; /* Opera 12+ */
+  animation: wiggle 0.5s infinite; /* IE 10+, Fx 29+ */}
+
+.coconut2 img {
+  max-width:600px;
+  position:absolute;
+  top:10%;
+  left:30%;
+  z-index:-10;
+}
+
+.daniel img {
+  max-width:300px;
+  position:absolute;
+  top:30%;
+  left:80%;
+  transform:rotate(10deg);
+  z-index:10;
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s; 
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite; 
+}
+
+.palm img {
+  width:400px;
+  position:absolute;
+  top:50%;
+  left:-3%;
+  transform:rotate(10deg);
+  z-index:10;
+}
+
+.palm2 img {
+  width:400px;
+  position:absolute;
+  top:50%;
+  right:0%;
+  transform:rotate(-10deg);
+  z-index:10;
+}
+
+#plane { 
+  position: absolute; 
+  left: -1000px; 
+  width: 50%; /* <- not relevant for the animation */ 
+  z-index:100;
+}
+
+
+@keyframes blink {  
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+  }
+
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes wiggle {
+  0%   { transform: rotate(0deg); }
+  50% { transform: rotate(20deg); }
+  100% { transform: rotate(-20deg); }
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
