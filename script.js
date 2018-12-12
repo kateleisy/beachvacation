@@ -23,16 +23,16 @@ function pauseAudio() {
 
 // full screen mode
 
-// addEventListener("click", function() {
-//     var
-//           el = document.documentElement
-//         , rfs =
-//                el.requestFullScreen
-//             || el.webkitRequestFullScreen
-//             || el.mozRequestFullScreen
-//     ;
-//     rfs.call(el);
-// });
+addEventListener("click", function() {
+    var
+          el = document.documentElement
+        , rfs =
+               el.requestFullScreen
+            || el.webkitRequestFullScreen
+            || el.mozRequestFullScreen
+    ;
+    rfs.call(el);
+});
 
 
 // animate the surfboard
